@@ -1,0 +1,125 @@
+.index-exam{  
+  .btn-success{
+    margin: 0 0 20px 0;
+    display: block;
+    width: 100px;
+  }
+  
+  h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5;
+  }
+}
+
+.show-exam{
+  p{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  ul{
+    list-style: none;
+    strong{
+      font-size: 20px;
+    }
+  }
+
+  input[type="radio"]{
+    width: 22px;
+  }
+
+  .option {
+    margin-left: 25px;
+    margin-top: 10px;
+  }
+
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    user-select: none;
+    font-weight: normal;
+
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    &:hover input ~ .checkmark {
+      background-color: #ccc;
+    }
+
+    input:checked ~ .checkmark {
+      background-color: #2196F3;
+    }
+
+    input:checked ~ .checkmark:after {
+      display: block;
+    }
+
+    .checkmark:after {
+      top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+    } 
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #bfb8b8;
+    border-radius: 50%;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+  }
+}
+
+.box-exam {
+  border-radius: 11px;
+  border: 3px double #716d6d;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 15px;
+  width: 30%;
+  margin-right: 38px;
+  a:first-child{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: block;
+  }
+  p{
+    line-height: 20px !important;
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+input[type="checkbox"] {
+  width: 25px;
+}  
+.nested-fields.answer-field.fieldset {
+  margin-left: 45px;
+  margin-bottom: 20px;
+}
+.edit_exam{
+  .nested-fields.answer-field.fieldset {
+    margin-left: 0 !important;
+  }
+}
